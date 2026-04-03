@@ -35,9 +35,9 @@ public class GameTest {
 		game.question = "123";
 		GuessResult result =  game.guess("123");
 		assertThat(result).isNotNull();
-		assertThat(result.solved).isEqualTo(true);
-		assertThat(result.strikes).isEqualTo(3);
-		assertThat(result.ball).isEqualTo(0);
+		assertThat(result.isSolved()).isEqualTo(true);
+		assertThat(result.getStrikes()).isEqualTo(3);
+		assertThat(result.getBall()).isEqualTo(0);
 	}
 
 	private void assertIllegalArgument(String guessNumber) {
