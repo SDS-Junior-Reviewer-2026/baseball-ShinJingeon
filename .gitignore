@@ -3,3 +3,7 @@
 .project
 .classpath
 /bin/
+
+/target/classes/baseball/Game.class
+/target/test-classes/baseball/GameTest.class
+/target/*
